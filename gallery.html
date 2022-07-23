@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Winners Teens,High-flying Teens, Teens church, LFC Teens">
+  <title>Teens Church | Winners Ondo road</title>
+  <link rel="icon" href="images/logo.png" style="border-radius: 65%;" type="image/x-icon" sizes="32x32">
+  <link rel="stylesheet" href="gallery.css">
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+   <!--Font Awesome icons-->
+   <script src="https://kit.fontawesome.com/a23f59323f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div class="loader"> 
+    <img src="images/gif.gif" alt="">
+  </div>
+    <header>
+      <img src="images/logo.png" alt="">
+      <nav class="navbar">
+        
+           <ul class="nav-menu">
+           <li class="nav-item">
+             <a href="index.html" class="nav-link">Home</a>
+           </li>
+           <li class="nav-item">
+             <a href="mission.html" class="nav-link">Mission</a>
+           </li>
+           <li class="nav-item">
+             <a href="gallery.html" class="nav-link">Gallery</a>
+           </li>
+           <li class="nav-item">
+             <a href="about.html" class="nav-link">About Us</a>
+           </li>
+         </ul>
+      
+
+         <div class="hamburger">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+         </div>
+      </nav>
+    </header>
+   
+
+    <!---Content--->
+    <section class="gallery">
+        <h1>Gallery</h1>
+    
+
+      <div class="img-gallery">
+          <img src="images/img1.jpg" >
+          <img src="images/img3.jpg" >
+          <img src="images/img14.jpg" >
+          <img src="images/img17.jpg" >
+          <img src="images/img18.jpg" >
+          <img src="images/img21.jpg" >
+          <img src="images/img22.jpg" >
+          <img src="images/img23.jpg" >
+      </div>
+    </section>
+       <!--footer-->
+   <section class="footer">
+    <div class="footer-txt">
+        <h5>USEFUL LINKS</h5>
+        <ul>
+            <a href="https://en.m.wikipedia.org/wiki/David_Oyedepo" target="_blank"><li>BISHOP DAVID OYEDEPO</li></a>
+            <a href="http://faithoyedepo.org/" target="_blank"><li>PASTOR FAITH OYEDEPO</li></a>
+            <a href="http://davidabioye.org.ng/" target="_blank"><li>BISHOP DAVID ABIOYE</li></a>
+            <a href="https://faithtabernacle.org.ng/" target="_blank"><li>FAITH TABERNACLE</li></a>
+            <a href="http://domimedia.org/" target="_blank"><li>DOMI RADIO</li></a>
+        </ul>
+    </div>
+
+    <div class="copy-txt">
+        COPYRIGHT &copy; 2022 WINNERS TEENS CHURCH ONDO ROAD - ALL RIGHTS RESERVED.
+    </div>
+    <div class="icons">
+        <a href="https://www.instagram.com/_thehighflyers" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://t.me/highflyingundergrads?videochat" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://chat.whatsapp.com/IkayxIWH0Mr42uPmGFSqFQ" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <div class="author">
+      Created With <i class="fa-solid fa-heart"></i></i> By <a href="https://twitter.com/matthewashafa" target="_blank">Matthew Ashafa</a> 
+  </div>
+</section>
+
+
+    <!--Javascript-->
+    <script>
+      //preloader
+      const loader = document.querySelector(".loader")
+
+      window.addEventListener("load", vanish);
+
+      function vanish(){
+        loader.classList.add("disappear")
+      }
+      //font scroll
+
+      window.addEventListener("scroll", reveal);
+
+      function reveal(){
+        var reveal = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveal.length; i++){
+          var windowHeight = window.innerHeight;
+          var revealTop = reveal[i].getBoundingClientRect().top;
+          var revealPoint = 50;
+
+          if(revealTop < windowHeight - revealPoint){
+            reveal[i].classList.add("active");
+          }
+          else{
+            reveal[i].classList.remove("active");
+          }
+        }
+      }
+
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      })
+    </script>
+</body>
+</html>
