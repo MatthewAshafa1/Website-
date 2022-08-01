@@ -17,6 +17,11 @@
     justify-content: center;
     align-items: center;
 }
+.name {
+    margin-left: 0;
+    font-size: 26px;
+    margin-right: 270px;
+  }
 .disappear {
     animation: vanish 2s forwards;
 }
